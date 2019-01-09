@@ -61,7 +61,7 @@
 	
 	<!-- others: such as change-bg, time... -->
 	<p class="page-name-other">
-		10/22/2018 
+		1/9/2019 
 		<style type="text/css">
 	header:after {
 		content: '';
@@ -190,38 +190,64 @@
 						<h1 id="密码学的由来"><a href="#密码学的由来" class="headerlink" title="密码学的由来"></a>密码学的由来</h1><h2 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h2><p>类型1：替代法</p>
 <p>思路：将明文中字母按照一定规律换成其他字母，隐含含义</p>
 <p>类型2：换位法<br>思路：将明文中字母重新排列，打乱字母位置，隐含含义</p>
+<p><hr></p>
+<h3 id="摩斯密码"><a href="#摩斯密码" class="headerlink" title="摩斯密码"></a>摩斯密码</h3><p>特征：<img src="https://i.imgur.com/FDcZ9o7.jpg" alt=""></p>
+<h3 id="栅栏密码"><a href="#栅栏密码" class="headerlink" title="栅栏密码"></a>栅栏密码</h3><p>例如：</p>
+<p>明文：IAMAGIRL</p>
+<p>置换码：4（意思是把明文平分为4组）</p>
+<p>密文：IMGR AAIL</p>
+<h3 id="凯撒密码（26个字母表）"><a href="#凯撒密码（26个字母表）" class="headerlink" title="凯撒密码（26个字母表）"></a>凯撒密码（26个字母表）</h3><h4 id="定义：它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。"><a href="#定义：它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。" class="headerlink" title="定义：它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。"></a>定义：它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。</h4><p>例如：<br>明文：IAMAGIRL<br>规则密文：JBNBHJSM</p>
+<h3 id="维吉尼亚密码"><a href="#维吉尼亚密码" class="headerlink" title="维吉尼亚密码"></a>维吉尼亚密码</h3><p><img src="https://i.imgur.com/lRKpKE6.png" alt=""></p>
 <h2 id="现代密码学"><a href="#现代密码学" class="headerlink" title="现代密码学"></a>现代密码学</h2><p>密码技术的基本思想是伪装信息，使未授权者不能理解其真实含义</p>
 <p>伪装前原始数据为明文Messager/Plaintest   密文Ciphertext</p>
 <p>明文M在加密密钥Ke的控制下，经过一组数学变换E（加密算法）生成密文C</p>
 <p>加密Encipher:C=E(M,Ke)   解密Decipher：M=D(C,Kd)<br>互逆：D（E(M,Ke)，Kd）=M</p>
-<h3 id="对称密码技术"><a href="#对称密码技术" class="headerlink" title="对称密码技术"></a>对称密码技术</h3><h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><h4 id="1-机密性：只有发送方和接收方知道密钥"><a href="#1-机密性：只有发送方和接收方知道密钥" class="headerlink" title="1.机密性：只有发送方和接收方知道密钥"></a>1.机密性：只有发送方和接收方知道密钥</h4><p><img src="https://i.imgur.com/ROQYK6H.png" alt=""></p>
-<h4 id="2-真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一"><a href="#2-真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一" class="headerlink" title="2.真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一"></a>2.真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一</h4><p><img src="https://i.imgur.com/VoZWD6P.png" alt=""></p>
+<hr>
+
+<h3 id="对称密码技术"><a href="#对称密码技术" class="headerlink" title="对称密码技术"></a>对称密码技术</h3><h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><h4 id="1-机密性：只有发送方和接收方知道密钥"><a href="#1-机密性：只有发送方和接收方知道密钥" class="headerlink" title="1.机密性：只有发送方和接收方知道密钥"></a>1.机密性：只有发送方和接收方知道密钥</h4><div align="center"><br><img src="https://i.imgur.com/ROQYK6H.png" width="250px" height="250px"><br></div>
+
+<h4 id="2-真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一"><a href="#2-真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一" class="headerlink" title="2.真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一"></a>2.真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一</h4><div align="center"><br><img src="https://i.imgur.com/VoZWD6P.png" width="250px" height="250px"><br></div>
+
 <p> DES是一种分组密码，明文密文和秘钥都是64bit<br>   对合运算，加密解密采用同一种算法</p>
 <p> 人工分配密钥：n(n-1)/2个密钥</p>
 <p>自动分配KDC:n个主密钥（用户与KDC之间）</p>
 <h4 id="好处："><a href="#好处：" class="headerlink" title="好处："></a>好处：</h4><pre><code>1.密钥变少了 
 2.分配安全了 
 3.一次（会话）一密
-</code></pre><h4 id="优点：效率高"><a href="#优点：效率高" class="headerlink" title="优点：效率高"></a>优点：效率高</h4><h4 id="缺点：秘钥多，难分配"><a href="#缺点：秘钥多，难分配" class="headerlink" title="缺点：秘钥多，难分配"></a>缺点：秘钥多，难分配</h4><h3 id="非对称密码-RSA、ECC"><a href="#非对称密码-RSA、ECC" class="headerlink" title="非对称密码(RSA、ECC)"></a>非对称密码(RSA、ECC)</h3><h4 id="含义：采用双密钥-Ke-Kd-加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥"><a href="#含义：采用双密钥-Ke-Kd-加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥" class="headerlink" title="含义：采用双密钥(Ke,Kd)加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥"></a>含义：采用双密钥(Ke,Kd)加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥</h4><h4 id="加密-C-E-M-Ke-解密M-D-C-Kd-Ke≠Kd"><a href="#加密-C-E-M-Ke-解密M-D-C-Kd-Ke≠Kd" class="headerlink" title="加密:C=E(M,Ke)     解密M=D(C,Kd) Ke≠Kd"></a>加密:C=E(M,Ke)     解密M=D(C,Kd) Ke≠Kd</h4><h4 id="RSA-1024bit-安全性基于两个较大的素因子，基于数学上的困难"><a href="#RSA-1024bit-安全性基于两个较大的素因子，基于数学上的困难" class="headerlink" title="RSA(1024bit)安全性基于两个较大的素因子，基于数学上的困难"></a>RSA(1024bit)安全性基于两个较大的素因子，基于数学上的困难</h4><h4 id="优点：密钥分配容易"><a href="#优点：密钥分配容易" class="headerlink" title="优点：密钥分配容易"></a>优点：密钥分配容易</h4><h4 id="缺点：效率低"><a href="#缺点：效率低" class="headerlink" title="缺点：效率低"></a>缺点：效率低</h4><h4 id="非对称密码-机密性：接收方的公钥加密-接收方的私钥解密"><a href="#非对称密码-机密性：接收方的公钥加密-接收方的私钥解密" class="headerlink" title="非对称密码 机密性：接收方的公钥加密 接收方的私钥解密"></a>非对称密码 机密性：接收方的公钥加密 接收方的私钥解密</h4><p><img src="https://i.imgur.com/VY5IsYo.png" alt=""></p>
-<h4 id="非对称密码-真实性-抗抵赖：发送方的私钥做了数字签名-接收方用发送方的公钥进行验证"><a href="#非对称密码-真实性-抗抵赖：发送方的私钥做了数字签名-接收方用发送方的公钥进行验证" class="headerlink" title="非对称密码 真实性+抗抵赖：发送方的私钥做了数字签名 接收方用发送方的公钥进行验证"></a>非对称密码 真实性+抗抵赖：发送方的私钥做了数字签名 接收方用发送方的公钥进行验证</h4><p>真实性采用发送方的密钥对，安全性的基础为”唯一私钥”绝对唯一<br><img src="https://i.imgur.com/GS3Bmse.png" alt=""></p>
+</code></pre><h4 id="优点：效率高"><a href="#优点：效率高" class="headerlink" title="优点：效率高"></a>优点：效率高</h4><h4 id="缺点：秘钥多，难分配"><a href="#缺点：秘钥多，难分配" class="headerlink" title="缺点：秘钥多，难分配"></a>缺点：秘钥多，难分配</h4><hr>
+
+<h3 id="非对称密码-RSA、ECC"><a href="#非对称密码-RSA、ECC" class="headerlink" title="非对称密码(RSA、ECC)"></a>非对称密码(RSA、ECC)</h3><h4 id="含义：采用双密钥-Ke-Kd-加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥"><a href="#含义：采用双密钥-Ke-Kd-加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥" class="headerlink" title="含义：采用双密钥(Ke,Kd)加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥"></a>含义：采用双密钥(Ke,Kd)加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥</h4><h4 id="加密-C-E-M-Ke-解密M-D-C-Kd-Ke≠Kd"><a href="#加密-C-E-M-Ke-解密M-D-C-Kd-Ke≠Kd" class="headerlink" title="加密:C=E(M,Ke)     解密M=D(C,Kd) Ke≠Kd"></a>加密:C=E(M,Ke)     解密M=D(C,Kd) Ke≠Kd</h4><h4 id="RSA-1024bit-安全性基于两个较大的素因子，基于数学上的困难"><a href="#RSA-1024bit-安全性基于两个较大的素因子，基于数学上的困难" class="headerlink" title="RSA(1024bit)安全性基于两个较大的素因子，基于数学上的困难"></a>RSA(1024bit)安全性基于两个较大的素因子，基于数学上的困难</h4><h4 id="优点：密钥分配容易"><a href="#优点：密钥分配容易" class="headerlink" title="优点：密钥分配容易"></a>优点：密钥分配容易</h4><h4 id="缺点：效率低"><a href="#缺点：效率低" class="headerlink" title="缺点：效率低"></a>缺点：效率低</h4><h4 id="非对称密码-机密性：接收方的公钥加密-接收方的私钥解密"><a href="#非对称密码-机密性：接收方的公钥加密-接收方的私钥解密" class="headerlink" title="非对称密码 机密性：接收方的公钥加密 接收方的私钥解密"></a>非对称密码 机密性：接收方的公钥加密 接收方的私钥解密</h4><div align="center"><br><img src="https://i.imgur.com/VY5IsYo.png" width="250px" height="250px"><br></div>
+
+<h4 id="非对称密码-真实性-抗抵赖：发送方的私钥做了数字签名-接收方用发送方的公钥进行验证"><a href="#非对称密码-真实性-抗抵赖：发送方的私钥做了数字签名-接收方用发送方的公钥进行验证" class="headerlink" title="非对称密码 真实性+抗抵赖：发送方的私钥做了数字签名 接收方用发送方的公钥进行验证"></a>非对称密码 真实性+抗抵赖：发送方的私钥做了数字签名 接收方用发送方的公钥进行验证</h4><p>真实性采用发送方的密钥对，安全性的基础为”唯一私钥”绝对唯一</p>
+<div align="center"><br><img src="https://i.imgur.com/GS3Bmse.png" width="250px" height="250px"><br></div>
+
 <h4 id="公钥证书：由相关信息info与数字签名S两部分组成"><a href="#公钥证书：由相关信息info与数字签名S两部分组成" class="headerlink" title="公钥证书：由相关信息info与数字签名S两部分组成"></a>公钥证书：由相关信息info与数字签名S两部分组成</h4><h4 id="公钥证书-数字证书-信息部分：用户标识、用户公开密钥及其他信息"><a href="#公钥证书-数字证书-信息部分：用户标识、用户公开密钥及其他信息" class="headerlink" title="公钥证书(数字证书)信息部分：用户标识、用户公开密钥及其他信息"></a>公钥证书(数字证书)信息部分：用户标识、用户公开密钥及其他信息</h4><h3 id="CA-Certificate-Authority-电子商务认证授权机构-，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。"><a href="#CA-Certificate-Authority-电子商务认证授权机构-，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。" class="headerlink" title="CA, Certificate Authority(电子商务认证授权机构)，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。"></a>CA, Certificate Authority(电子商务认证授权机构)，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。</h3><p>步骤：<br>1.A生成密钥(Kea,Kda)<br>2.A向CA申请证书<br>3.保存密钥，Kda(加密存储) 保存公钥证书<br>4.B向A索取证书<br>5.验证CA签名(拿CA的公钥) 获取A公钥Kea</p>
+<hr>
+
 <h3 id="HASH-单向散列函数-——无密钥"><a href="#HASH-单向散列函数-——无密钥" class="headerlink" title="HASH(单向散列函数)——无密钥"></a>HASH(单向散列函数)——无密钥</h3><h4 id="特点：-1"><a href="#特点：-1" class="headerlink" title="特点："></a>特点：</h4><p>1.单向（不可逆）：M=&gt;H，但H无法导出M，单向加密<br>2.散列（抗碰撞）：不存在（非常困难）碰撞现象”报文不同，HASH值不同”</p>
-<h4 id="HASH函数算法：MD5-128bit-、SHA-1-160bit-、SHA256-256bit"><a href="#HASH函数算法：MD5-128bit-、SHA-1-160bit-、SHA256-256bit" class="headerlink" title="HASH函数算法：MD5(128bit)、SHA-1(160bit)、SHA256(256bit)"></a>HASH函数算法：MD5(128bit)、SHA-1(160bit)、SHA256(256bit)</h4><h4 id="HASH机密性"><a href="#HASH机密性" class="headerlink" title="HASH机密性"></a>HASH机密性</h4><p><img src="https://i.imgur.com/DqgfPCJ.png" alt=""></p>
-<h4 id="HASH完整性"><a href="#HASH完整性" class="headerlink" title="HASH完整性"></a>HASH完整性</h4><p><img src="https://i.imgur.com/lR50RRT.png" alt=""></p>
-<p>案例：文件下载验证、网页防篡改<br><img src="https://i.imgur.com/hhXi0g9.png" alt=""></p>
-<p><img src="https://i.imgur.com/OmFOnTC.png" alt=""></p>
-<p><img src="https://i.imgur.com/rWtgrLw.png" alt=""></p>
-<p><img src="https://i.imgur.com/BUok23l.png" alt=""></p>
-<p><img src="https://i.imgur.com/MTnhB4C.png" alt=""></p>
-<p><img src="https://i.imgur.com/63OCXJI.png" alt=""></p>
-<p><img src="https://i.imgur.com/q33uWWB.png" alt=""></p>
-<p><img src="https://i.imgur.com/cOSHhHW.png" alt=""></p>
-<p><img src="https://i.imgur.com/VhhqMPW.png" alt=""></p>
-<p><img src="https://i.imgur.com/ObWaPpG.png" alt=""></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="最后的组合剩下"><a href="#最后的组合剩下" class="headerlink" title="最后的组合剩下"></a>最后的组合剩下</h2><p><code>1.机密性</code></p>
-<p><code>2.完整性+真实性</code></p>
-<p><code>3.完整性+真实性+机密性</code></p>
-<p>机密性一般放在最后</p>
+<h4 id="HASH函数算法：MD5-128bit-、SHA-1-160bit-、SHA256-256bit"><a href="#HASH函数算法：MD5-128bit-、SHA-1-160bit-、SHA256-256bit" class="headerlink" title="HASH函数算法：MD5(128bit)、SHA-1(160bit)、SHA256(256bit)"></a>HASH函数算法：MD5(128bit)、SHA-1(160bit)、SHA256(256bit)</h4><h4 id="HASH机密性"><a href="#HASH机密性" class="headerlink" title="HASH机密性"></a>HASH机密性</h4><div align="center"><br><img src="https://i.imgur.com/DqgfPCJ.png" width="250px" height="250px"><br></div><br>#### HASH完整性<br><div align="center"><br><img src="https://i.imgur.com/lR50RRT.png" width="250px" height="250px"><br></div><br>案例：文件下载验证、网页防篡改<br><br><div align="center"><br><img src="https://i.imgur.com/hhXi0g9.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/OmFOnTC.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/rWtgrLw.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/BUok23l.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/MTnhB4C.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/63OCXJI.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/q33uWWB.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/cOSHhHW.png" width="250px" height="250px"><br></div>
+
+<div align="center"><br><img src="https://i.imgur.com/VhhqMPW.png" width="250px" height="250px"><br></div>
+
+<p><div align="center"><br><img src="https://i.imgur.com/ObWaPpG.png" width="250px" height="250px"><br></div></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="最后的组合剩下"><a href="#最后的组合剩下" class="headerlink" title="最后的组合剩下"></a>最后的组合剩下</h2><pre><code>1.机密性
+2.完整性+真实性
+3.完整性+真实性+机密性
+</code></pre><p>机密性一般放在最后</p>
 
 					
 				</div>
@@ -324,7 +350,7 @@
 				
 				
 				<!--toc(post.content)-->
-				<ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#密码学的由来"><span class="post-toc-text">密码学的由来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#古典密码学"><span class="post-toc-text">古典密码学</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#现代密码学"><span class="post-toc-text">现代密码学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对称密码技术"><span class="post-toc-text">对称密码技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特点："><span class="post-toc-text">特点：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-机密性：只有发送方和接收方知道密钥"><span class="post-toc-text">1.机密性：只有发送方和接收方知道密钥</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一"><span class="post-toc-text">2.真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#好处："><span class="post-toc-text">好处：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#优点：效率高"><span class="post-toc-text">优点：效率高</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#缺点：秘钥多，难分配"><span class="post-toc-text">缺点：秘钥多，难分配</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#非对称密码-RSA、ECC"><span class="post-toc-text">非对称密码(RSA、ECC)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#含义：采用双密钥-Ke-Kd-加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥"><span class="post-toc-text">含义：采用双密钥(Ke,Kd)加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#加密-C-E-M-Ke-解密M-D-C-Kd-Ke≠Kd"><span class="post-toc-text">加密:C=E(M,Ke)     解密M=D(C,Kd) Ke≠Kd</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#RSA-1024bit-安全性基于两个较大的素因子，基于数学上的困难"><span class="post-toc-text">RSA(1024bit)安全性基于两个较大的素因子，基于数学上的困难</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#优点：密钥分配容易"><span class="post-toc-text">优点：密钥分配容易</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#缺点：效率低"><span class="post-toc-text">缺点：效率低</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#非对称密码-机密性：接收方的公钥加密-接收方的私钥解密"><span class="post-toc-text">非对称密码 机密性：接收方的公钥加密 接收方的私钥解密</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#非对称密码-真实性-抗抵赖：发送方的私钥做了数字签名-接收方用发送方的公钥进行验证"><span class="post-toc-text">非对称密码 真实性+抗抵赖：发送方的私钥做了数字签名 接收方用发送方的公钥进行验证</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#公钥证书：由相关信息info与数字签名S两部分组成"><span class="post-toc-text">公钥证书：由相关信息info与数字签名S两部分组成</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#公钥证书-数字证书-信息部分：用户标识、用户公开密钥及其他信息"><span class="post-toc-text">公钥证书(数字证书)信息部分：用户标识、用户公开密钥及其他信息</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CA-Certificate-Authority-电子商务认证授权机构-，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。"><span class="post-toc-text">CA, Certificate Authority(电子商务认证授权机构)，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HASH-单向散列函数-——无密钥"><span class="post-toc-text">HASH(单向散列函数)——无密钥</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特点：-1"><span class="post-toc-text">特点：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HASH函数算法：MD5-128bit-、SHA-1-160bit-、SHA256-256bit"><span class="post-toc-text">HASH函数算法：MD5(128bit)、SHA-1(160bit)、SHA256(256bit)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HASH机密性"><span class="post-toc-text">HASH机密性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HASH完整性"><span class="post-toc-text">HASH完整性</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-text">总结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后的组合剩下"><span class="post-toc-text">最后的组合剩下</span></a></li></ol></li></ol>
+				<ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#密码学的由来"><span class="post-toc-text">密码学的由来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#古典密码学"><span class="post-toc-text">古典密码学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#摩斯密码"><span class="post-toc-text">摩斯密码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#栅栏密码"><span class="post-toc-text">栅栏密码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#凯撒密码（26个字母表）"><span class="post-toc-text">凯撒密码（26个字母表）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#定义：它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。"><span class="post-toc-text">定义：它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#维吉尼亚密码"><span class="post-toc-text">维吉尼亚密码</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#现代密码学"><span class="post-toc-text">现代密码学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对称密码技术"><span class="post-toc-text">对称密码技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特点："><span class="post-toc-text">特点：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-机密性：只有发送方和接收方知道密钥"><span class="post-toc-text">1.机密性：只有发送方和接收方知道密钥</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一"><span class="post-toc-text">2.真实性：除了验证者（接收方）只有真实的发送方知道密钥K——相对唯一</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#好处："><span class="post-toc-text">好处：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#优点：效率高"><span class="post-toc-text">优点：效率高</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#缺点：秘钥多，难分配"><span class="post-toc-text">缺点：秘钥多，难分配</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#非对称密码-RSA、ECC"><span class="post-toc-text">非对称密码(RSA、ECC)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#含义：采用双密钥-Ke-Kd-加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥"><span class="post-toc-text">含义：采用双密钥(Ke,Kd)加密密钥Ke公开称为公钥，解密密钥Kd保密称为私钥</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#加密-C-E-M-Ke-解密M-D-C-Kd-Ke≠Kd"><span class="post-toc-text">加密:C=E(M,Ke)     解密M=D(C,Kd) Ke≠Kd</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#RSA-1024bit-安全性基于两个较大的素因子，基于数学上的困难"><span class="post-toc-text">RSA(1024bit)安全性基于两个较大的素因子，基于数学上的困难</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#优点：密钥分配容易"><span class="post-toc-text">优点：密钥分配容易</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#缺点：效率低"><span class="post-toc-text">缺点：效率低</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#非对称密码-机密性：接收方的公钥加密-接收方的私钥解密"><span class="post-toc-text">非对称密码 机密性：接收方的公钥加密 接收方的私钥解密</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#非对称密码-真实性-抗抵赖：发送方的私钥做了数字签名-接收方用发送方的公钥进行验证"><span class="post-toc-text">非对称密码 真实性+抗抵赖：发送方的私钥做了数字签名 接收方用发送方的公钥进行验证</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#公钥证书：由相关信息info与数字签名S两部分组成"><span class="post-toc-text">公钥证书：由相关信息info与数字签名S两部分组成</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#公钥证书-数字证书-信息部分：用户标识、用户公开密钥及其他信息"><span class="post-toc-text">公钥证书(数字证书)信息部分：用户标识、用户公开密钥及其他信息</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CA-Certificate-Authority-电子商务认证授权机构-，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。"><span class="post-toc-text">CA, Certificate Authority(电子商务认证授权机构)，也称为电子商务认证中心，是负责发放和管理数字证书的权威机构，并作为电子商务交易中受信任的第三方，承担公钥体系中公钥的合法性检验的责任。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HASH-单向散列函数-——无密钥"><span class="post-toc-text">HASH(单向散列函数)——无密钥</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特点：-1"><span class="post-toc-text">特点：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HASH函数算法：MD5-128bit-、SHA-1-160bit-、SHA256-256bit"><span class="post-toc-text">HASH函数算法：MD5(128bit)、SHA-1(160bit)、SHA256(256bit)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HASH机密性"><span class="post-toc-text">HASH机密性</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-text">总结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后的组合剩下"><span class="post-toc-text">最后的组合剩下</span></a></li></ol></li></ol>
 			</nav>
 			<div class="post-toc-bar"><div>
 		</aside>
@@ -362,7 +388,7 @@
 	<div  class="blog-text-center">
 		<div class="theme-annie-copyright">
 			
-				&copy; 2017 - 2018, content by John Doe. All Rights Reserved.			       	
+				&copy; 2017 - 2019, content by John Doe. All Rights Reserved.			       	
 			
 		</div>
 	</div>
